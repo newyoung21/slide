@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+	<title>幻灯片</title>
+	<style type="text/css">
+		ul,li{
+			list-style: none;
+		}
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.active{
+			background: red !important ;
+		}
+	</style>
+</head>
+<body>
+	<div class="slide"></div>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/slide2.js"></script>
+	<script type="text/javascript">
+		var imgs = [{'src':'./images/202.jpg'},{'src':'./images/203.jpg'},{'src':'./images/204.jpg'},{'src':'./images/nba2.jpg'}]
+		var obj = {data:imgs,height:'180px'}
+		$('.slide').touch(obj);
+	</script>	
+</body>
+</html>
